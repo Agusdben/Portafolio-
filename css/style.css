@@ -46,6 +46,15 @@ ul{
     list-style: none;
 }
 
+input:focus, textarea:focus{
+    outline: none;
+}
+
+textarea{
+    resize: none;
+}
+/*====================================HEADER====================================*/
+
 .header{
     background-color: #333;
     min-height: 100vh;
@@ -139,6 +148,7 @@ ul{
     cursor: pointer;
 }
 
+/*============================ABOUT,PROJECTS,CONTACT============================*/
 #about,
 #projects,
 #contact{
@@ -148,12 +158,13 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: clamp(1.5rem, 2.5vw, 1.5rem);
 }
 
+/*====================================ABOUT====================================*/
 .about__container{
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 1px 1px 10px #555;
     padding: 1em;
 }
 
@@ -185,7 +196,7 @@ ul{
     margin-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
-    font-size: clamp(1.5rem, 2.5vw, 1.5rem); 
+    /* font-size: clamp(1.5rem, 2.5vw, 1.5rem);  */
 }
 
 .about__title{
@@ -203,4 +214,54 @@ ul{
 .about__link:hover{
     text-decoration: underline;
     color: var(--color1);
+}
+
+/*====================================PROJECTS====================================*/
+
+
+
+/*====================================CONTACT=====================================*/
+
+.contact__title{
+    text-align: center;
+    margin-bottom: 1em;
+    color: var(--color1);
+    text-decoration: underline;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input, .form__textarea{
+    border: 1px solid #000;
+    width: clamp(200px, 50vw, 350px);
+    background-color: transparent;
+    padding: 1em;
+    margin: .5em auto;
+
+}
+
+.form__textarea{
+    height: 100px;
+}
+
+.form__submit{
+    display: inline-block;
+    width: 100px;
+    padding: 1em;
+    margin: auto;
+    background-color: var(--color2);
+    color: var(--color1);
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    transition: all 350ms ease-in-out;
+}
+
+.form__submit:hover{
+    cursor: pointer;
+    background-color: var(--color1);
+    color: #fff;
 }
