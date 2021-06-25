@@ -2,8 +2,8 @@
 
 .beta{
     position: absolute;
-    top: 10px;
-    left: 10px;
+    z-index: 100;
+    width: fit-content;
     font-size: 2em;
 }
 
@@ -13,7 +13,8 @@
 }
 
 :root{
-    --color1: #c00000
+    --color1: #c00000;
+    --color2: #555;
 }
 
 *,
@@ -29,6 +30,7 @@ body{
     color: #e1e1e1;
     min-height: 100vh;
     min-width: 100vw;
+    overflow-x: hidden;
 }
 
 a{
@@ -95,7 +97,7 @@ ul{
     width: 85px;
     height: 85px;
     text-align: center;
-    background-color: #555;
+    background-color: var(--color2);
 }
 
 .nav__item--circle{
@@ -115,4 +117,30 @@ ul{
 }
 .nav__link:hover {
     color: var(--color1);
+}
+
+.fa-chevron-up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 200;
+    font-size: 2em;
+    padding: .3em;
+    border-radius: 50%;
+    background-color: var(--color2);
+    color: var(--color1);
+    transition: all 500ms;
+}
+
+.fa-chevron-up:hover{
+    background-color: var(--color1);
+    color: #fff;
+    cursor: pointer;
+}
+
+#about,
+#proyects,
+#contact{
+    height: 1000px;
+    color: #000;
 }
