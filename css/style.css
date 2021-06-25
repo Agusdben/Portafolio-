@@ -14,7 +14,7 @@
 }
 
 :root{
-    --color1: #c00000;
+    --color1: #dd0000;
     --color2: #555;
 }
 
@@ -146,11 +146,12 @@ textarea{
     background-color: var(--color1);
     color: #fff;
     cursor: pointer;
+    border: 1px solid #000;
 }
 
-/*============================ABOUT,PROJECTS,CONTACT============================*/
+/*============================ABOUT,CONTACT============================*/
 #about,
-#projects,
+#project,
 #contact{
     padding: 1em .5em;
     height: 100vh;
@@ -177,7 +178,6 @@ textarea{
 .about__picture{
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid var(--color1);
 }
 
 .about__img{
@@ -207,18 +207,67 @@ textarea{
 
 .about__link{
     display: inline;
-    color: var(--color2);
+    color: var(--color1);
     font-weight: 900;
 }
 
 .about__link:hover{
+    color: var(--color2);
     text-decoration: underline;
-    color: var(--color1);
 }
 
 /*====================================PROJECTS====================================*/
+#project{
+    background-color: var(--color1);
+}
 
+.project__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.project__card{
+    font-size: clamp(1rem, 3vmin, 1em);
+    width: clamp(200px, 50vw, 500px);
+    height: 15vh;
+    display: inline-block;
+    margin: 1em;
+    padding: 1em;
+    padding-bottom: 0;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    background-color: var(--color2);
+    box-shadow: 2px 2px 20px #000;
+}
+.project__title,
+.project__description,
+.project__links{
+    height: 33%;
+}
+.project__title{
+    text-decoration: underline;
+}
+
+.project__description{
+    font-weight: 300;
+}
+
+.project__links{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.project__links i{
+    color: var(--color1);
+    padding: .5em;
+}
+
+.project__link{
+    width: fit-content;
+}
 
 /*====================================CONTACT=====================================*/
 
