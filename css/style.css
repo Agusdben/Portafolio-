@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 .beta{
-    position: absolute;
+    position: fixed;
+    right: 0;
     z-index: 100;
     width: fit-content;
     font-size: 2em;
+    color: var(--color1);
 }
 
 .beta i {
     margin-left: .4em;
-    color: var(--color1);
 }
 
 :root{
