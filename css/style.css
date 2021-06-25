@@ -236,7 +236,7 @@ textarea{
 
 .form__input, .form__textarea{
     border: 1px solid #000;
-    width: clamp(200px, 50vw, 350px);
+    width: clamp(250px, 50vw, 450px);
     background-color: transparent;
     padding: 1em;
     margin: .5em auto;
@@ -254,7 +254,7 @@ textarea{
     margin: auto;
     background-color: var(--color2);
     color: var(--color1);
-    font-weight: 900;
+    font-weight: 700;
     border: none;
     border-radius: 10px;
     transition: all 350ms ease-in-out;
