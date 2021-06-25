@@ -228,9 +228,9 @@ textarea{
 }
 
 .project__card{
-    font-size: clamp(1rem, 3vmin, 1em);
-    width: clamp(200px, 50vw, 500px);
-    height: 15vh;
+    font-size: clamp(1rem, 2vmin, 1em);
+    width: clamp(75px, 50vw, 250px);
+    height: clamp(20%, 50vh, 500px);
     display: inline-block;
     margin: 1em;
     padding: 1em;
