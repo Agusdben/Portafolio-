@@ -140,6 +140,7 @@ textarea{
     background-color: var(--color2);
     color: var(--color1);
     transition: all 500ms;
+    border: 1px solid transparent;
 }
 
 .fa-chevron-up:hover{
