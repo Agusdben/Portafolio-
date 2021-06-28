@@ -152,7 +152,6 @@ textarea{
 
 /*============================ABOUT,CONTACT============================*/
 #about,
-#project,
 #contact{
     padding: 1em .5em;
     height: 100vh;
@@ -220,54 +219,53 @@ textarea{
 /*====================================PROJECTS====================================*/
 #project{
     background-color: var(--color1);
+    height: 100vh;
+    
 }
 
 .project__container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    height: inherit;
+    max-width: 1000px;
+    height: 90vh;
+    display: grid;
+    margin: auto;
+    align-items: center;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
 }
 
 .project__card{
-    font-size: clamp(1rem, 2vmin, 1em);
-    width: clamp(75px, 50vw, 250px);
-    height: clamp(20%, 50vh, 500px);
-    display: inline-block;
-    margin: 1em;
-    padding: 1em;
-    padding-bottom: 0;
     text-align: center;
-    border-radius: 10px;
-    color: #fff;
     background-color: var(--color2);
-    box-shadow: 2px 2px 20px #000;
+    width: 20ch;
+    margin: auto;
+    border-radius: 10px;
+    padding: .5em;
+    font-size: clamp(1.5rem, 2.5vw, 1em);
 }
-.project__title,
-.project__description,
-.project__links{
+.project__card > *{
     height: 33%;
 }
-.project__title{
-    text-decoration: underline;
-}
 
-.project__description{
-    font-weight: 300;
+.project__title{
+    color: var(--color1);
+    text-decoration: underline;
 }
 
 .project__links{
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
-
-.project__links i{
-    color: var(--color1);
-    padding: .5em;
+    justify-content: center;
 }
 
 .project__link{
+    display: inline;
     width: fit-content;
+    padding: .5em;
+    transition: all 300ms ease;
+}
+
+.project__link:hover{
+    color: var(--color1);
 }
 
 /*====================================CONTACT=====================================*/
