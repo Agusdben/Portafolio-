@@ -10,10 +10,6 @@ function HandleForm () {
                 'Accept': 'application/json'
             }    
         });
-        e.stopImmediatePropagation();
-        if(response.ok){
-            alert('thx')
-        }
     }
 }
 
